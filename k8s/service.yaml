@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: fastapi-server
+spec:
+  selector:
+    app: fastapi-server
+  ports:
+    - protocol: TCP
+      port: 3000
+  type: LoadBalancer
