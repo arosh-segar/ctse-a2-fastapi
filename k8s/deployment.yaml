@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fastapi-server
-spec: 
+  name: fastapi-app
+spec:
   selector:
     matchLabels:
-      app: fastapi-server
+      app: fastapi-app
   replicas: 2
   template:
     metadata:
       labels:
-        app: fastapi-server
-    spec: 
+        app: fastapi-app
+    spec:
       containers:
-        - name: fastapi-server
-          image: aroshsegar/fastapi-server:v1
+        - name: fastapi-app
+          image: gcr.io/golden-sandbox-343808/fastapi-app:v1
           ports:
-            - containerPort: 3000
+            - containerPort: 80
