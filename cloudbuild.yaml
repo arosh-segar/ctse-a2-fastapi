@@ -54,17 +54,17 @@ images:
 options:
   substitutionOption: ALLOW_LOOSE
 substitutions:
-  _IMAGE_NAME: gcr.io/golden-sandbox-343808/github.com/arosh-segar/ctse-a2-fastapi
-  _K8S_NAMESPACE: default
-  _K8S_LABELS: ''
-  _DOCKERFILE_DIR: ''
-  _GKE_CLUSTER: abc-store-cluster
-  _GKE_LOCATION: asia-southeast2
-  _K8S_YAML_PATH: k8s/
-  _K8S_ANNOTATIONS: gcb-trigger-id=752b23ac-5b2c-4d68-b21b-f9aef02a0e9c
   _OUTPUT_BUCKET_PATH: golden-sandbox-343808_cloudbuild/deploy
-  _K8S_APP_NAME: fastapi-app
   _DOCKERFILE_NAME: Dockerfile
+  _K8S_YAML_PATH: k8s/
+  _IMAGE_NAME: gcr.io/golden-sandbox-343808/github.com/arosh-segar/ctse-a2-fastapi
+  _GKE_CLUSTER: ctse-cluster
+  _K8S_ANNOTATIONS: gcb-trigger-id=79924555-bc93-4174-bc6d-65addc054d63
+  _DOCKERFILE_DIR: ''
+  _K8S_LABELS: ''
+  _GKE_LOCATION: us-central1
+  _K8S_APP_NAME: authentication-service
+  _K8S_NAMESPACE: default
 tags:
   - gcp-cloud-build-deploy
   - $_K8S_APP_NAME
