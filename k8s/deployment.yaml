@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: fastapi-app
-          image: gcr.io/golden-sandbox-343808/fastapi-app:v1
+          image: gcr.io/golden-sandbox-343808/github.com/arosh-segar/ctse-a2-fastapi
           ports:
             - containerPort: 80
