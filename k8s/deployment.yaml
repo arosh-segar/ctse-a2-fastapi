@@ -1,16 +1,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fastapi-app
+  name: authentication-service
 spec:
   selector:
     matchLabels:
-      app: fastapi-app
+      app: authentication-service
   replicas: 2
   template:
     metadata:
       labels:
-        app: fastapi-app
+        app: authentication-service
     spec:
       containers:
         - name: fastapi-app
