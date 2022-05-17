@@ -14,7 +14,7 @@ app.add_middleware(
 
 @app.get("/")
 def read_root():
-    return {"var": "Hello World"}
+    return {"Login": "Login Successfull"}
 
 
 @app.get("/items/{item_id}")
